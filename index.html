@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANURBI - Solução Completa Reforma Tributária 2026</title>
+    <meta name="description" content="Sistema completo de georreferenciamento imobiliário para adequação municipal à Reforma Tributária 2026. Validação espacial automática com satélite e IA.">
+    
+    <!-- React & Babel -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'DM Serif Display', serif;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-out;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel" src="planurbi.jsx"></script>
+    
+    <script type="text/babel">
+        // Inicializar Lucide icons
+        lucide.createIcons();
+        
+        // Render
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<PlanurbiLanding />);
+    </script>
+</body>
+</html>
