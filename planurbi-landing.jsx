@@ -80,6 +80,9 @@ const PlanurbiLanding = () => {
             <button onClick={() => scrollToSection('solucao')} className="text-gray-700 hover:text-emerald-600 font-medium transition">
               Solução
             </button>
+            <button onClick={() => scrollToSection('iptu')} className="text-gray-700 hover:text-emerald-600 font-medium transition">
+              IPTU Inteligente
+            </button>
             <button onClick={() => scrollToSection('beneficios')} className="text-gray-700 hover:text-emerald-600 font-medium transition">
               Benefícios
             </button>
@@ -106,6 +109,9 @@ const PlanurbiLanding = () => {
               </button>
               <button onClick={() => scrollToSection('solucao')} className="text-left text-gray-700 hover:text-emerald-600 font-medium">
                 Solução
+              </button>
+              <button onClick={() => scrollToSection('iptu')} className="text-left text-gray-700 hover:text-emerald-600 font-medium">
+                IPTU Inteligente
               </button>
               <button onClick={() => scrollToSection('beneficios')} className="text-left text-gray-700 hover:text-emerald-600 font-medium">
                 Benefícios
@@ -528,6 +534,158 @@ const PlanurbiLanding = () => {
         </div>
       </section>
 
+      {/* MÓDULO 4 - IPTU INTELIGENTE */}
+      <section id="iptu" className="py-20 px-4 relative overflow-hidden bg-gradient-to-br from-orange-50 to-amber-100">
+        <div className="container mx-auto relative z-10">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12 animate-fadeIn">
+              <div className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-3 rounded-full text-sm font-bold mb-6 animate-pulse-slow shadow-xl">
+                🚀 LANÇAMENTO 2026 - EXCLUSIVO PLANURBI
+              </div>
+              <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+                Módulo 4:<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-600">
+                  IPTU Inteligente
+                </span>
+              </h2>
+              <p className="text-2xl font-bold text-orange-600 mb-4">
+                De R$ 50-100K para R$ 150-300K por projeto
+              </p>
+              <p className="text-xl text-gray-700">
+                Da coleta de dados à arrecadação pronta em um único sistema
+              </p>
+            </div>
+
+            {/* Antes vs Depois */}
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-white rounded-2xl p-8 shadow-xl border-l-4 border-red-500 card-hover">
+                <h3 className="text-2xl font-bold mb-6 flex items-center text-red-600">
+                  <i data-lucide="x-circle" className="w-8 h-8 mr-3"></i>
+                  Sem IPTU Inteligente
+                </h3>
+                <ul className="space-y-4 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="text-red-500 font-bold mr-3 text-xl">✗</span>
+                    <span>Você entrega apenas dados brutos georreferenciados</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 font-bold mr-3 text-xl">✗</span>
+                    <span>Município precisa calcular IPTU manualmente</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 font-bold mr-3 text-xl">✗</span>
+                    <span>Backlog de meses ou anos</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 font-bold mr-3 text-xl">✗</span>
+                    <span>Erros humanos frequentes</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 font-bold mr-3 text-xl">✗</span>
+                    <span className="font-bold text-lg">Valor: R$ 50.000 - 100.000</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-2xl p-8 shadow-xl border-4 border-emerald-300 text-white card-hover">
+                <h3 className="text-2xl font-bold mb-6 flex items-center">
+                  <i data-lucide="check-circle" className="w-8 h-8 mr-3"></i>
+                  Com IPTU Inteligente ⭐
+                </h3>
+                <ul className="space-y-4">
+                  <li className="flex items-start">
+                    <span className="text-yellow-300 font-bold mr-3 text-xl">✓</span>
+                    <span>IPTU calculado e pronto para cobrança</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-yellow-300 font-bold mr-3 text-xl">✓</span>
+                    <span>Município apenas aprova e cobra</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-yellow-300 font-bold mr-3 text-xl">✓</span>
+                    <span>Aumento imediato de arrecadação</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-yellow-300 font-bold mr-3 text-xl">✓</span>
+                    <span>Precisão 98-99% (IA + humano)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-yellow-300 font-bold mr-3 text-2xl">★</span>
+                    <span className="font-bold text-yellow-300 text-lg">Valor: R$ 150.000 - 300.000</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Como Funciona */}
+            <div className="bg-white rounded-2xl p-8 shadow-xl mb-12 card-hover">
+              <h3 className="text-3xl font-bold text-center mb-8 text-gray-900">
+                <i data-lucide="cpu" className="inline w-8 h-8 mr-3 text-orange-500"></i>
+                Sistema Híbrido: IA + Validação Humana
+              </h3>
+              <div className="grid md:grid-cols-4 gap-6">
+                <div className="text-center">
+                  <div className="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-white font-bold text-xl bg-gradient-to-br from-emerald-500 to-emerald-600 shadow-lg">
+                    1
+                  </div>
+                  <h4 className="font-bold mb-2 text-gray-900">Coleta Enriquecida</h4>
+                  <p className="text-sm text-gray-600">Foto + GPS + formulário completo</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-white font-bold text-xl bg-gradient-to-br from-blue-500 to-blue-600 shadow-lg">
+                    2
+                  </div>
+                  <h4 className="font-bold mb-2 text-gray-900">Pré-cálculo IA</h4>
+                  <p className="text-sm text-gray-600">Sistema sugere IPTU + confiança %</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-white font-bold text-xl bg-gradient-to-br from-purple-500 to-purple-600 shadow-lg">
+                    3
+                  </div>
+                  <h4 className="font-bold mb-2 text-gray-900">Validação Humana</h4>
+                  <p className="text-sm text-gray-600">Auditor aprova casos de alta confiança</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center text-white font-bold text-xl bg-gradient-to-br from-orange-500 to-red-600 shadow-lg">
+                    4
+                  </div>
+                  <h4 className="font-bold mb-2 text-gray-900">IPTU Final</h4>
+                  <p className="text-sm text-gray-600">Valor oficial para cobrança</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Resultados */}
+            <div className="bg-gradient-to-br from-orange-600 to-red-600 rounded-2xl p-8 text-white shadow-2xl">
+              <h3 className="text-3xl font-bold text-center mb-8">
+                Resultados Comprovados
+              </h3>
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="text-center p-6 bg-white bg-opacity-20 rounded-xl backdrop-blur-sm">
+                  <div className="text-5xl font-bold mb-2">80%</div>
+                  <p className="text-lg">Casos aprovados automaticamente</p>
+                </div>
+                <div className="text-center p-6 bg-white bg-opacity-20 rounded-xl backdrop-blur-sm">
+                  <div className="text-5xl font-bold mb-2">98-99%</div>
+                  <p className="text-lg">Precisão final do cálculo</p>
+                </div>
+                <div className="text-center p-6 bg-white bg-opacity-20 rounded-xl backdrop-blur-sm">
+                  <div className="text-5xl font-bold mb-2">5-10x</div>
+                  <p className="text-lg">Ganho de produtividade</p>
+                </div>
+              </div>
+              <div className="p-6 bg-white bg-opacity-20 rounded-xl text-center backdrop-blur-sm">
+                <p className="text-2xl font-bold mb-2">
+                  <i data-lucide="trophy" className="inline w-8 h-8 mr-2"></i>
+                  Diferencial Único no Mercado
+                </p>
+                <p className="text-lg">Nenhum concorrente oferece cálculo de IPTU completo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Diferencial Competitivo */}
       <section className="py-20 px-4 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white">
         <div className="container mx-auto">
@@ -875,7 +1033,7 @@ const PlanurbiLanding = () => {
                 <i data-lucide="check-circle-2" className="inline w-6 h-6 mr-2"></i>
                 PLANURBI Garante
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-left">
                 <div className="flex items-start space-x-3">
                   <i data-lucide="camera" className="w-8 h-8 text-emerald-400 flex-shrink-0"></i>
                   <div>
@@ -888,6 +1046,13 @@ const PlanurbiLanding = () => {
                   <div>
                     <h4 className="font-bold mb-1">Validação Automática</h4>
                     <p className="text-gray-300 text-sm">IA + satélite + auditoria visual</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <i data-lucide="calculator" className="w-8 h-8 text-orange-400 flex-shrink-0"></i>
+                  <div>
+                    <h4 className="font-bold mb-1">IPTU Inteligente</h4>
+                    <p className="text-gray-300 text-sm">Cálculo automático pronto</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -963,6 +1128,7 @@ const PlanurbiLanding = () => {
               <ul className="space-y-2 text-sm">
                 <li><button onClick={() => scrollToSection('desafio')} className="hover:text-emerald-400 transition">O Desafio</button></li>
                 <li><button onClick={() => scrollToSection('solucao')} className="hover:text-emerald-400 transition">Módulos</button></li>
+                <li><button onClick={() => scrollToSection('iptu')} className="hover:text-emerald-400 transition">IPTU Inteligente</button></li>
                 <li><button onClick={() => scrollToSection('beneficios')} className="hover:text-emerald-400 transition">Benefícios</button></li>
                 <li><button onClick={() => scrollToSection('contato')} className="hover:text-emerald-400 transition">Contato</button></li>
               </ul>
